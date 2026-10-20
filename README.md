@@ -6,12 +6,12 @@
 - 
 ## Statuses
 
-| Status | Meaning |
-|---|---|
-| **Active** | Implemented in `NETFORY-APP`, rules enforced on mainnet (or enforced as soon as the feature is used). |
+| Status       | Meaning                                                                                                  |
+|--------------|----------------------------------------------------------------------------------------------------------|
+| **Active**   | Implemented in `NETFORY-APP`, rules enforced on mainnet (or enforced as soon as the feature is used).    |
 | **Accepted** | Implemented and tested in `NETFORY-APP`, activation on mainnet waits for a milestone / delegate upgrade. |
-| **Draft** | Proposal under discussion; may change or be withdrawn. |
-| **Final** | Frozen standard; changes require a new NIP. |
+| **Draft**    | Proposal under discussion; may change or be withdrawn.                                                   |
+| **Final**    | Frozen standard; changes require a new NIP.                                                              |
 
 ## Index
 
