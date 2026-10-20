@@ -3,7 +3,7 @@
 
 - **Repository**: <https://github.com/netfory/NIPs> · **Discussions**: <https://github.com/netfory/NIPs/issues>
 - **Process and template**: [NIP-0](nips/NIP-0.md).
-- 
+
 ## Statuses
 
 | Status       | Meaning                                                                                                  |
