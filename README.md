@@ -15,8 +15,8 @@
 
 ## Index
 
-|                NIP | Title                                                     | Type    | Category   | Status |
-|-------------------:|-----------------------------------------------------------|---------|------------|--------|
-| [0](nips/NIP-0.md) | NIP Purpose and Guidelines                                | Process | -          | 	Active |
-| [1](nips/NIP-1.md) | Mycelium: Onion Routing and Mixnet Layer for NETFORY Iroh | Process | Networking | Draft  |
+|                NIP | Title                                                     | Type            | Category   | Status |
+|-------------------:|-----------------------------------------------------------|-----------------|------------|--------|
+| [0](nips/NIP-0.md) | NIP Purpose and Guidelines                                | Process         | -          | 	Active |
+| [1](nips/NIP-1.md) | Mycelium: Onion Routing and Mixnet Layer for NETFORY Iroh | Standards Track | Networking | Draft  |
 
