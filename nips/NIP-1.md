@@ -1,20 +1,20 @@
 ```text
   NIP: 1
-  Title: Mycelium: Onion Routing and Mixnet Layer for NETFORY Iroh
+  Title: Mycelium: Mushroom (Onion) Routing and Mixnet Layer for NETFORY Iroh
   Authors: TechnoLog <technolog@smartholdem.io> / <SeZLuyhhYf2qxs4ArPJ71oEu3x8EsVw51C@sth>
   Status: Draft
   Discussions-To: https://github.com/netfory/NIPs/issues
   Type: Standards Track
   Category: Network / Privacy
-  Created: 2026-09-18
-  Last Update: 2026-09-18
+  Created: 2026-10-10
+  Last Update: 2026-10-21
 ```
 
-# Mycelium: Onion Routing Protocol Specification
+# Mycelium: Mushroom Routing Protocol Specification
 
 ## Abstract
 
-**Mycelium** is an application-layer onion routing (mixnet) protocol designed natively for the NETFORY P2P ecosystem. Operating on top of Iroh transport primitives (`iroh-net` QUIC streams and cryptographic `NodeID` addressing), Mycelium provides end-to-end metadata privacy, sender-receiver unlinkability, and robust censorship resistance. It enables multi-hop encrypted circuit routing, ensuring that intermediate relay nodes can only decrypt the immediate routing instructions without knowing the ultimate origin or destination of a packet.
+**Mycelium** is an application-layer mushroom (onion) routing (mixnet) protocol designed natively for the NETFORY P2P ecosystem. Operating on top of Iroh transport primitives (`iroh-net` QUIC streams and cryptographic `NodeID` addressing), Mycelium provides end-to-end metadata privacy, sender-receiver unlinkability, and robust censorship resistance. It enables multi-hop encrypted circuit routing, ensuring that intermediate relay nodes can only decrypt the immediate routing instructions without knowing the ultimate origin or destination of a packet.
 
 ---
 
@@ -52,7 +52,7 @@ To prevent traffic analysis based on packet-length profiling (side-channel attac
 * If a payload is smaller than 2048 bytes, it is padded with cryptographically secure pseudorandom bytes.
 * If larger, it is fragmented across multiple sequential cells with sequence identifiers.
 
-### 4. Layered Onion Encryption Structure
+### 4. Layered Encryption Structure
 
 A Mycelium packet directed through a 3-hop circuit (`Client -> Guard -> Middle -> Exit -> Recipient`) is wrapped in three layers of encryption.
 
@@ -118,11 +118,11 @@ pub struct MyceliumCell {
 }
 
 impl MyceliumCell {
-    /// Peels one layer of onion encryption at the relay node
+    /// Peels one layer of mushroom encryption at the relay node
     pub fn peel(&mut self, cipher: &ChaCha20Poly1305, nonce: &Nonce) -> Result<(), &'static str> {
         // In-place decryption of the outer layer
         cipher.decrypt_in_place(nonce, b"", &mut self.payload)
-            .map_err(|_| "Failed to decrypt onion layer")?;
+            .map_err(|_| "Failed to decrypt mushroom layer")?;
         Ok(())
     }
 }

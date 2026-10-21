@@ -1,5 +1,5 @@
+![Netfory-NIPs.jpg](Netfory-NIPs.jpg)
 # NETFORY Improvement Proposals
-
 
 - **Repository**: <https://github.com/netfory/NIPs> · **Discussions**: <https://github.com/netfory/NIPs/issues>
 - **Process and template**: [NIP-0](nips/NIP-0.md).
@@ -15,8 +15,8 @@
 
 ## Index
 
-|                NIP | Title                                                     | Type            | Category   | Status |
-|-------------------:|-----------------------------------------------------------|-----------------|------------|--------|
-| [0](nips/NIP-0.md) | NIP Purpose and Guidelines                                | Process         | -          | 	Active |
-| [1](nips/NIP-1.md) | Mycelium: Onion Routing and Mixnet Layer for NETFORY Iroh | Standards Track | Networking | Draft  |
+|                NIP | Title                                                                        | Type            | Category   | Status |
+|-------------------:|------------------------------------------------------------------------------|-----------------|------------|--------|
+| [0](nips/NIP-0.md) | NIP Purpose and Guidelines                                                   | Process         | -          | Active |
+| [1](nips/NIP-1.md) | Mycelium: Mushroom (is like Onion) Routing and Mixnet Layer for NETFORY Iroh | Standards Track | Networking | Active |
 
